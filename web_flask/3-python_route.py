@@ -26,9 +26,11 @@ def task2(text):
     text = text.replace("_", " ")
     return f"C {text}"
 
-@app.route("/python/<text>/", strict_slashes=False)
+@app.route("/python/<text>", strict_slashes=False)
 def task3(text):
-    text = text.replace("_", " ") or "is cool"
+    if text is None:
+        text = "is cool"
+    text = text.replace("_", " ")
     return f"Python {text}"
 
 if __name__ == "__main__":
