@@ -27,6 +27,7 @@ def task2(text):
     return f"C {text}"
 
 @app.route("/python/<text>", strict_slashes=False)
+@app.route("/python/" strict_slashes=False)
 def task3(text="is cool"):
     text = text.replace("_", " ")
     return f"Python {text}"
