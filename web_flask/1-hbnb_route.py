@@ -15,7 +15,10 @@ app = Flask(__name__)
 def task0():
     return "Hello HBNB!"
 
+
 """"""
+
+
 @app.route("/hbnb", strict_slashes=False)
 def task1():
     return "HBNB"
