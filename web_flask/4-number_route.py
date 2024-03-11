@@ -36,7 +36,7 @@ def task3(text="is cool"):
 
 @app.route("/number/<n>", strict_slashes=False)
 def task4(n):
-    if isinstance(n, int) == True:
+    if type(n) == int:
         return n
     else:
         return
