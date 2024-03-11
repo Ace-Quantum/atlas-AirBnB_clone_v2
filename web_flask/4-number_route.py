@@ -39,8 +39,6 @@ def task3(text="is cool"):
 def task4(n):
     if type(n) == int:
         return n
-    else:
-        return
 
 
 if __name__ == "__main__":
