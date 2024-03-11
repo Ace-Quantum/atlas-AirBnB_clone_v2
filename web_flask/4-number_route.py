@@ -36,7 +36,7 @@ def task3(text="is cool"):
 
 @app.route("/number/<int:n>", strict_slashes=False)
 def task4(n):
-    return f"{n}"
+    return f"{n} is a number"
 
 
 if __name__ == "__main__":
