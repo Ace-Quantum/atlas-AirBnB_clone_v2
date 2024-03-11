@@ -34,5 +34,13 @@ def task3(text="is cool"):
     return f"Python {text}"
 
 
+@app.route("/number/<n>", strict_slashes=False)
+def task4(n):
+    if isinstance(n, int):
+        return n
+    else:
+        return
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
