@@ -2,7 +2,7 @@
 
 """Triple quotes for documentation"""
 
-from flask import Flask
+from flask import Flask, render_template
 
 """More documentation because idk where they want it"""
 
