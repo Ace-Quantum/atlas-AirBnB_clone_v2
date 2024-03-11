@@ -47,9 +47,9 @@ def task5(n):
 @app.route("/number_odd_or_even/<int:n>", strict_slashes=False)
 def task6(n):
     if (n % 2) == 0:
-        return render_template("6-number_odd_or_even.html", number=n, odd_bool="even")
+        return render_template("6-number_odd_or_even.html", number=n, oe="even")
     else:
-        return render_template("6-number_odd_or_even.html", number=n, odd_bool="odd")
+        return render_template("6-number_odd_or_even.html", number=n, oe="odd")
 
 
 if __name__ == "__main__":
